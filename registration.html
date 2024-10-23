@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Classical Dance Performance Registration</title> 
+    <style> 
+        body { 
+            font-family: 'Arial', sans-serif; 
+            color: #fff; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: flex-end;  
+            align-items: center; 
+            height: 100vh; 
+            position: relative; 
+        } 
+ 
+        
+        body::before { 
+            content: ''; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-image: url('classic5.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            opacity: 0.8;  
+            z-index: -1;  
+        } 
+ 
+        .container { 
+            background-color: pink;  
+            padding: 40px; 
+            border-radius: 15px; 
+            width: 500px; 
+            z-index: 1; 
+            margin-right: 20px;  
+            color: #000;  
+        } 
+ 
+        h1 { 
+            text-align: center; 
+            font-size: 30px; 
+            margin-bottom: 30px; 
+            color: #000;  
+        } 
+ 
+        .form-group { 
+            margin-bottom: 20px; 
+        } 
+ 
+        .form-group label { 
+            display: block; 
+            font-size: 16px; 
+            margin-bottom: 5px; 
+        } 
+ 
+        .form-group input,  
+        .form-group select { 
+            width: 100%; 
+            padding: 10px; 
+            border-radius: 5px; 
+            border: none; 
+            font-size: 16px; 
+        } 
+ 
+        .form-group input::placeholder { 
+            color: #999999; 
+        } 
+ 
+        .form-group input[type="submit"] { 
+            background-color: #add8e6;  
+            color: #000; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        } 
+ 
+        .form-group input[type="submit"]:hover { 
+            background-color: #87cefa;  
+        } 
+ 
+        .radio-group { 
+            margin-bottom: 20px; 
+        } 
+ 
+        .radio-group label { 
+            font-size: 16px; 
+            margin-right: 20px; 
+            cursor: pointer; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>Registration Form for Classical Dance Event</h1> 
+        <form> 
+            <div class="form-group"> 
+                <label for="first-name">First Name</label> 
+                <input type="text" id="first-name" placeholder="Enter your 
+first name"> 
+            </div> 
+            <div class="form-group"> 
+                <label for="last-name">Last Name</label> 
+                <input type="text" id="last-name" placeholder="Enter your last 
+name"> 
+            </div> 
+            <div class="form-group"> 
+                <label for="email">Email</label> 
+                <input type="text" id="email" placeholder="Enter your email"> 
+            </div> 
+            <div class="form-group"> 
+                <label for="phone-number">Phone Number</label> 
+                <input type="text" id="phone-number" placeholder="Enter your 
+phone number"> 
+            </div> 
+            <div class="form-group"> 
+                <label for="age">Age</label> 
+                <input type="text" id="age" placeholder="Enter your age"> 
+            </div> 
+            <div class="form-group"> 
+                <label for="gender">Gender</label> 
+                <select id="gender"> 
+                    <option value="">Select your gender</option> 
+                    <option value="female">Female</option> 
+                    <option value="male">Male</option> 
+                    <option value="other">Other</option> 
+                </select> 
+            </div> 
+            <div class="radio-group"> 
+                <label>Date of Attending:</label><br> 
+                <label><input type="radio" name="attending-date" value="2024
+09-01"> September 1, 2024</label> 
+                <label><input type="radio" name="attending-date" value="2024
+09-02"> September 2, 2024</label> 
+                <label><input type="radio" name="attending-date" value="2024
+09-03"> September 3, 2024</label> 
+            </div> 
+            <div class="form-group"> 
+                <input type="submit" value="Submit"> 
+</div> 
+</form> 
+</div> 
+</body> 
+</html> 
